@@ -25,6 +25,7 @@ class App {
                 }
             }),
         );
+        console.log("holaaaaa");
     }
 
     static #mainMenu = async (e) => {
@@ -36,15 +37,16 @@ class App {
         }
 
         switch (option) {
-            case "Catalogo de producto":
+            case "Catálogo de productos":
                 App.loadPage();
                 App.loadPage("./resources/html/inicio.html", "main");
                 break;
+
             case "Comprar":
-                App.loadPage("./resources/html/acerca.html", "main");
+                App.loadPage("./resources/html/comprar.html", "main");
                 break;
             case "Acerca de":
-                App.loadPage("./resources/html/programas.html", "main");
+                App.loadPage("./resources/html/acerca.html", "main");
                 break;
             case "Contacto":
                 await App.loadPage("./resources/html/contacto.html", "main");

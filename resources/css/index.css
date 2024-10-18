@@ -3,8 +3,7 @@ body {
     font-family: Helvetica, sans-serif;
     background-color: #fffaf3;
     margin: 0;
-    height: 100vh;
-    /* display: flex;
+    height: 100vh; /* display: flex;
     justify-content: center; */
 }
 
