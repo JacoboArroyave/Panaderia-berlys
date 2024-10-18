@@ -8,7 +8,7 @@ body {
 
 .card-category-2 ul li {
     list-style-type: none;
-    display: inline-block;
+
     vertical-align: top;
 }
 
@@ -147,7 +147,7 @@ body {
 
 .img-card.iCard-style3 .card-link {
     margin-top: 17px;
-    border-top: 1px solid #e8e8e8;
+    border-top: 1px solid #d9cfc2;
     text-align: center;
     height: 40px;
 }
@@ -178,4 +178,10 @@ body {
     width: 20px;
     height: auto;
     padding-right: 30px;
+}
+.price {
+    color: #ad8853;
+}
+.card-text p {
+    color: #5c3b0b;
 }

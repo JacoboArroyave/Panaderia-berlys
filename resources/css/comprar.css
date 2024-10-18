@@ -1,90 +1,100 @@
+.comprar {
+    padding: 0;
+}
+h4 {
+    color: #a3865e;
+}
+.texto-comprar {
+    /* color: #; */
+    color: #5c3b0b;
+}
 .carrito {
-    border: 2px solid black;
+    border: 2px solid #d9cfc2;
     padding: 20px;
     width: 85%;
     margin: 30px auto;
     font-family: "Roboto", sans-serif;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-  }
+}
 
-  .carrito .titulo{
+.carrito .titulo {
     text-align: center;
     margin-bottom: auto;
     display: grid;
     place-items: center;
-  }
+}
 
-  .carrito .titulo_carrito{
+.carrito .titulo_carrito {
     text-align: center;
-    margin-bottom: auto ;
-  }
-  
-  .carrito .titulo,
-  .carrito .producto {
+    margin-bottom: auto;
+}
+
+.carrito .titulo,
+.carrito .producto {
     display: grid;
     grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
     gap: 10px;
-    border-bottom: 1px solid black;
-  }
-  
-  .carrito .titulo p {
+    border-bottom: 1px solid #b7a892;
+}
+
+.carrito .titulo p {
     font-weight: bold;
-  }
-  
-  .carrito .producto {
+}
+
+.carrito .producto {
     display: grid;
     place-items: center;
     text-align: center;
-  }
-  
-  .carrito .producto input {
+}
+
+.carrito .producto input {
     width: 40px;
-  }
-  
-  .carrito .totales {
+}
+
+.carrito .totales {
     margin-top: 20px;
     display: flex;
     justify-content: flex-end;
     gap: 20px;
     width: 50%;
     margin-left: auto;
-  }
-  
-  .carrito .botones {
+}
+
+.carrito .botones {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-  }
-  
-  .carrito .botones button {
+}
+
+.carrito .botones button {
     padding: 10px 20px;
     border: none;
-    background-color: #272727;
+    background-color: #b79058;
     color: white;
     cursor: pointer;
-  }
-  
-  .carrito .botones button:hover {
-    background-color: #aeaeae;
-  }
-  
-  @media (min-width: 601px) and (max-width: 900px) {
-  .carrito {
-    width: 70%;
-  }
-  .carrito .totales {
-    justify-content: space-between;
-    width: 50%;
-    margin-left: auto;
-  }
 }
-  @media (min-width: 901px) {
-  .carrito {
-    width: 60%;
-  }
-  .carrito .totales {
-    justify-content: space-between;
-    width: 50%;
-    margin-left: auto;
-  }
+
+.carrito .botones button:hover {
+    background-color: #debd8e;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .carrito {
+        width: 70%;
+    }
+    .carrito .totales {
+        justify-content: space-between;
+        width: 50%;
+        margin-left: auto;
+    }
+}
+@media (min-width: 901px) {
+    .carrito {
+        width: 60%;
+    }
+    .carrito .totales {
+        justify-content: space-between;
+        width: 50%;
+        margin-left: auto;
+    }
 }

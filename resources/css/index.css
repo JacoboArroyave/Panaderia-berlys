@@ -1,7 +1,11 @@
 body {
     margin: 0;
     font-family: Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fffaf3;
+    margin: 0;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center; */
 }
 
 a {
@@ -9,16 +13,18 @@ a {
 }
 
 main {
-    margin-top: 50px;
+    margin-top: 80px;
 }
-/* header */
 
 .header {
-    background-color: #fff;
+    background-color: #e5d4bb;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .header ul {
@@ -26,7 +32,7 @@ main {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #e5d4bb;
 }
 
 .header li a {
@@ -34,11 +40,12 @@ main {
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
+    color: #5c3b0b;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-    background-color: #f4f4f4;
+    background-color: #debd8e;
 }
 
 .header .logo {
