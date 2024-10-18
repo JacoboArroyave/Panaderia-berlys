@@ -10,6 +10,7 @@ class App {
 
         App.dptos = await App.fetchJSON(linkDptos);
         App.ciudades = await App.fetchJSON(linkCiud);
+        console.log("hola");
 
         const listOption = document.querySelectorAll("#main-menu a");
         const logo = document.querySelectorAll(".header .logo");
