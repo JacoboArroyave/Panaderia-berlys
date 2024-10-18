@@ -36,12 +36,12 @@ class App {
         }
 
         switch (option) {
-            case "Catálogo de productos":
+            case "Catalogo de producto":
                 App.loadPage();
                 App.loadPage("./resources/html/inicio.html", "main");
                 break;
             case "Comprar":
-                App.loadPage("./resources/html/comprar.html", "main");
+                App.loadPage("./resources/html/acerca.html", "main");
                 break;
             case "Acerca de":
                 App.loadPage("./resources/html/programas.html", "main");
