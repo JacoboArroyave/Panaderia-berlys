@@ -1,0 +1,70 @@
+/* Estilos base (Mobile First) */
+.acerca-de {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.acerca-de h2 {
+  color: #b5651d;
+  margin-bottom: 10px;
+}
+
+.acerca-de p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.acerca-de > div {
+  border-bottom: 1px solid black;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.acerca-de .titulo {
+  text-align: center;
+}
+
+.acerca-de .imagen img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+.acerca-de .imagen {
+  text-align: center;
+}
+
+.acerca-de .contenido {
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .acerca-de > div {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .acerca-de .titulo {
+    grid-column: 1 / -1;
+    text-align: center;
+    order: -1;
+  }
+
+  .acerca-de .imagen {
+    grid-column: 1 / 2;
+  }
+
+  .acerca-de .contenido {
+    grid-column: 2 / 3;
+  }
+}
