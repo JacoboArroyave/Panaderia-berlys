@@ -87,6 +87,7 @@ class App {
     }
 
     static async loadPage(url, container = null) {
+        console.log("Hola");
         try {
             const response = await fetch(url);
 
