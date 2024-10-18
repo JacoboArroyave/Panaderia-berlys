@@ -12,6 +12,9 @@ class App {
         App.ciudades = await App.fetchJSON(linkCiud);
         const listOption = document.querySelectorAll("#main-menu a");
         const logo = document.querySelectorAll(".header .logo");
+        // listOption.forEach(item => item.addEventListener('click', item => console.log(item);
+        // ))
+        listOption.forEach((item) => item.addEventListener("click", App.#mainMenu));
         logo.forEach((item) =>
             item.addEventListener("click", (e) => {
                 let option = "ninguna";
@@ -22,9 +25,6 @@ class App {
                 }
             }),
         );
-        // listOption.forEach(item => item.addEventListener('click', item => console.log(item);
-        // ))
-        listOption.forEach((item) => item.addEventListener("click", App.#mainMenu));
     }
 
     static #mainMenu = async (e) => {
@@ -36,13 +36,14 @@ class App {
         }
 
         switch (option) {
-            case "Nuestro trabajo":
+            case "Catalogo de producto":
                 App.loadPage();
+                App.loadPage("./resources/html/inicio.html", "main");
                 break;
-            case "Acerca de...":
+            case "Comprar":
                 App.loadPage("./resources/html/acerca.html", "main");
                 break;
-            case "Programas":
+            case "Acerca de":
                 App.loadPage("./resources/html/programas.html", "main");
                 break;
             case "Contacto":
